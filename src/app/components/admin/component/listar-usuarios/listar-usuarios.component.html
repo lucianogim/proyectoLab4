@@ -1,0 +1,21 @@
+<p>listar-usuarios works!</p>
+<section>
+        <a><button  routerLink="/addUsuario"> Nuevo Usuario</button></a>
+        <table>
+            <tbody>
+            <tr>
+                <th>ID</th>
+                <th>Usuario</th>
+                <th>Nombre</th>
+            </tr>               
+        @for (item of listaUsuarios; track $index) {
+            <tr>
+              <td>{{item.id}}</td>
+              <td>{{item.usuario}}</td>
+              <td><a [routerLink]="['/updateUsuario',item.id]">Modificar</a></td>
+              <td>  <button (click)="delete(item.id)">Eliminar </button> </td>
+            </tr>
+        }
+        </tbody>
+        </table>
+</section>

@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+
+body{
+    max-width: 100%;
+}
+
+.ng-invalid:not(form).ng-touched{
+    border-bottom: 5px solid #a94442;
+}

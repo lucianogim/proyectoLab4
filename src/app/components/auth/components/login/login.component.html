@@ -1,0 +1,21 @@
+
+<div class="w3-container">
+    <form [formGroup]="formulario_login" (ngSubmit)="loginUsuario()">
+    
+        <label for="">Usuario: </label>
+        <input class="w3-input w3-border" type="text"
+            formControlName="usuario"
+            placeholder="Ingrese Usuario"
+            >
+        
+        <label for="">Password:</label>
+        <input class="w3-input w3-border" type="text"
+            formControlName="password"
+            placeholder="ingrese Password"
+            >
+        <br>
+        <button class="w3-btn w3-green w3-ripple" type="submit" >Iniciar sesion</button>
+    
+    </form>
+    </div>
+    
