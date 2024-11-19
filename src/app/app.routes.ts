@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
 import { PagesAdminAddUsuarioComponent } from './components/admin/pages/pages-admin-add-usuario/pages-admin-add-usuario.component';
 import { PagesAdminComponent } from './components/admin/pages/pages-admin/pages-admin.component';
 import { PagesAdminUpdateUsuarioComponent } from './components/admin/pages/pages-admin-update-usuario/pages-admin-update-usuario.component';
+import { authGuardFn } from './components/auth/guard/auth.guard-fn';
+import { authGuardFnAdmin } from './components/auth/guard/auth.guard-fn-admin';
 
 export const routes: Routes = [
     {
@@ -14,7 +16,8 @@ export const routes: Routes = [
     },
     {
         path: 'admin',
-        component: PagesAdminComponent 
+        component: PagesAdminComponent,
+        canActivate: [authGuardFnAdmin]
     },
     {
         path: 'login',
@@ -22,11 +25,13 @@ export const routes: Routes = [
     },
     {
         path: 'addUsuario',
-        component: PagesAdminAddUsuarioComponent
+        component: PagesAdminAddUsuarioComponent,
+        canActivate: [authGuardFnAdmin]
     },
     {
         path: 'updateUsuario/:id',
-        component: PagesAdminUpdateUsuarioComponent
+        component: PagesAdminUpdateUsuarioComponent,
+        canActivate: [authGuardFnAdmin]
     },
     {
         path: '**',

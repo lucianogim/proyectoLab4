@@ -32,7 +32,7 @@ export class UsuariosService {
     return this.http.delete<void>(`${this.urlbase}/${id}`);
   }
 
-  loginUsuario(usuario:string , password:string ): Observable<Usuarios>{
-    return this.http.get<Usuarios>(`${this.urlbase}?usuario=${usuario}&password=${password}`)
+  loginUsuario(usuario:string , password:string ): Observable<any>{
+    return this.http.get<any>(`${this.urlbase}?usuario=${usuario}&password=${password}`)
   }
 }
