@@ -11,6 +11,9 @@ import { authGuardFnLogout } from './components/auth/guard/auth.guard-fn-logout'
 import { PageListarPokemonsComponent } from './components/admin/pages/page-listar-pokemons/page-listar-pokemons.component';
 import { PagesUpdatePokemonComponent } from './components/admin/pages/pages-update-pokemon/pages-update-pokemon.component';
 import { PageAddPokemonComponent } from './components/admin/pages/page-add-pokemon/page-add-pokemon.component';
+import { PageListMovesComponent } from './components/admin/pages/page-list-moves/page-list-moves.component';
+import { PageUpdateMovesComponent } from './components/admin/pages/page-update-moves/page-update-moves.component';
+import { PageAddMovesComponent } from './components/admin/pages/page-add-moves/page-add-moves.component';
 
 export const routes: Routes = [
     {
@@ -48,6 +51,18 @@ export const routes: Routes = [
     {
         path: 'addPokemon',
         component: PageAddPokemonComponent 
+    },
+    {
+        path: 'listMoves',
+        component: PageListMovesComponent
+    },
+    {   
+        path:   'updateMoves/:id',
+        component: PageUpdateMovesComponent
+    },
+    {
+        path:   'addMoves',
+        component: PageAddMovesComponent
     },
     {
         path: '**',

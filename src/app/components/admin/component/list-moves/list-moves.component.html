@@ -1,1 +1,32 @@
-<p>list-moves works!</p>
+
+<section>
+<a><button  routerLink="/addMoves"> Nuevo Pokemon</button></a>
+<table>
+    <tbody>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Precision</th>
+        <th>Categoria</th>
+        <th>Poder</th>
+        <th>Efecto</th>
+        <th>Modificar</th>
+        <th>Eliminar</th>
+    </tr>               
+@for (item of listaMoves; track $index) {
+    <tr>
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.type}}</td>
+      <td>{{item.accuracy}}</td>
+      <td>{{item.category}}</td>
+      <td>{{item.power}}</td>
+      <td>{{item.effects}}</td>
+      <td><a  >Modificar</a></td>
+      <td>  <button (click)="delete(item.id)">Eliminar </button> </td>
+    </tr>
+}
+</tbody>
+</table>
+</section>
