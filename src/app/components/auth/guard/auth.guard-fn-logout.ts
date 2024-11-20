@@ -7,10 +7,10 @@ export const authGuardFnLogout = () =>{
     const router = inject(Router)
 
     if(localStorage.getItem("token") || localStorage.getItem("tokenAdmin")){
-        return true;    
+        return false;    
     }else{
-        router.navigateByUrl("")
-        return false;
+        //router.navigateByUrl("")
+        return true;
     }
 
 }

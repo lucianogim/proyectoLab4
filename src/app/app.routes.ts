@@ -8,6 +8,7 @@ import { PagesAdminComponent } from './components/admin/pages/pages-admin/pages-
 import { PagesAdminUpdateUsuarioComponent } from './components/admin/pages/pages-admin-update-usuario/pages-admin-update-usuario.component';
 import { authGuardFn } from './components/auth/guard/auth.guard-fn';
 import { authGuardFnAdmin } from './components/auth/guard/auth.guard-fn-admin';
+import { authGuardFnLogout } from './components/auth/guard/auth.guard-fn-logout';
 
 export const routes: Routes = [
     {
@@ -21,7 +22,8 @@ export const routes: Routes = [
     },
     {
         path: 'login',
-        component: LoginPagesComponent
+        component: LoginPagesComponent,
+        canActivate: [authGuardFnLogout]
     },
     {
         path: 'addUsuario',
