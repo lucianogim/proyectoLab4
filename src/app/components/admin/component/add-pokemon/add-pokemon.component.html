@@ -1,0 +1,67 @@
+
+<h1>Agregar nuevo Pokémon</h1>
+<form [formGroup]="formulario_add"  (ngSubmit)="addPokemon()">
+  <div class="form-group">
+    <label for="id">ID del Pokémon:</label>
+    <input type="text" id="id" name="id" 
+    formControlName="id">
+  </div>
+  
+  <div class="form-group">
+    <label for="name">Nombre del Pokémon:</label>
+    <input type="text" id="name" name="name" 
+    formControlName="name">
+  </div>
+  
+  <div class="form-group">
+    <label for="type">Tipo del Pokémon:</label>
+    <select id="type" name="type" multiple formControlName="type">
+      <option value="Fire">Fuego</option>
+      <option value="Water">Agua</option>
+      <option value="Grass">Planta</option>
+      <option value="Electric">Eléctrico</option>
+      <option value="Psychic">Psíquico</option>
+      <option value="Ice">Hielo</option>
+      <option value="Bug">Bicho</option>
+      <option value="Normal">Normal</option>
+      <option value="Fighting">Lucha</option>
+      <option value="Flying">Volador</option>
+      <option value="Poison">Veneno</option>
+      <!-- Añadir más tipos si es necesario -->
+    </select>
+  </div>
+  
+  <h3>Estadísticas Base</h3>
+  
+  <div class="form-group">
+    <label for="hp">HP:</label>
+    <input type="number" id="hp" name="hp" formControlName="HP">
+  </div>
+  
+  <div class="form-group">
+    <label for="attack">Ataque:</label>
+    <input type="number" id="attack" name="attack" formControlName="Attack">
+  </div>
+  
+  <div class="form-group">
+    <label for="defense">Defensa:</label>
+    <input type="number" id="defense" name="defense" formControlName="Defense">
+  </div>
+  
+  <div class="form-group">
+    <label for="spAttack">Ataque Especial:</label>
+    <input type="number" id="spAttack" name="spAttack" formControlName="SpAttack">
+  </div>
+  
+  <div class="form-group">
+    <label for="spDefense">Defensa Especial:</label>
+    <input type="number" id="spDefense" name="spDefense" formControlName="SpDefense">
+  </div>
+  
+  <div class="form-group">
+    <label for="speed">Velocidad:</label>
+    <input type="number" id="speed" name="speed" formControlName="Speed">
+  </div>
+  <br>
+  <button type="submit">Guardar Pokémon</button>
+</form>

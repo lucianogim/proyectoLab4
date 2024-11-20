@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { DashboardComponent } from './shared/dashboard/dashboard.component';
-import { ListarUsuariosComponent } from './components/admin/component/listar-usuarios/listar-usuarios.component';
 import { LoginPagesComponent } from './components/auth/pages/login-pages/login-pages.component';
 import { Component } from '@angular/core';
 import { PagesAdminAddUsuarioComponent } from './components/admin/pages/pages-admin-add-usuario/pages-admin-add-usuario.component';
@@ -10,6 +9,8 @@ import { authGuardFn } from './components/auth/guard/auth.guard-fn';
 import { authGuardFnAdmin } from './components/auth/guard/auth.guard-fn-admin';
 import { authGuardFnLogout } from './components/auth/guard/auth.guard-fn-logout';
 import { PageListarPokemonsComponent } from './components/admin/pages/page-listar-pokemons/page-listar-pokemons.component';
+import { PagesUpdatePokemonComponent } from './components/admin/pages/pages-update-pokemon/pages-update-pokemon.component';
+import { PageAddPokemonComponent } from './components/admin/pages/page-add-pokemon/page-add-pokemon.component';
 
 export const routes: Routes = [
     {
@@ -39,6 +40,14 @@ export const routes: Routes = [
     {   
         path: 'listPokemons',
         component: PageListarPokemonsComponent
+    },
+    {
+        path: 'updatePokemons/:id',
+        component: PagesUpdatePokemonComponent
+    },
+    {
+        path: 'addPokemon',
+        component: PageAddPokemonComponent 
     },
     {
         path: '**',

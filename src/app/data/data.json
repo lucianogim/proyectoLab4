@@ -53,8 +53,8 @@
         "HP": 45,
         "Attack": 49,
         "Defense": 49,
-        "Sp. Attack": 65,
-        "Sp. Defense": 65,
+        "SpAttack": 65,
+        "SpDefense": 65,
         "Speed": 45
       }
     },
@@ -69,8 +69,8 @@
         "HP": 60,
         "Attack": 62,
         "Defense": 63,
-        "Sp. Attack": 80,
-        "Sp. Defense": 80,
+        "SpAttack": 80,
+        "SpDefense": 80,
         "Speed": 60
       }
     },
@@ -85,8 +85,8 @@
         "HP": 80,
         "Attack": 82,
         "Defense": 83,
-        "Sp. Attack": 100,
-        "Sp. Defense": 100,
+        "SpAttack": 100,
+        "SpDefense": 100,
         "Speed": 80
       }
     },
@@ -100,8 +100,8 @@
         "HP": 39,
         "Attack": 52,
         "Defense": 43,
-        "Sp. Attack": 60,
-        "Sp. Defense": 50,
+        "SpAttack": 60,
+        "SpDefense": 50,
         "Speed": 65
       }
     },
@@ -115,8 +115,8 @@
         "HP": 58,
         "Attack": 64,
         "Defense": 58,
-        "Sp. Attack": 80,
-        "Sp. Defense": 65,
+        "SpAttack": 80,
+        "SpDefense": 65,
         "Speed": 80
       }
     },
@@ -131,8 +131,8 @@
         "HP": 78,
         "Attack": 84,
         "Defense": 78,
-        "Sp. Attack": 109,
-        "Sp. Defense": 85,
+        "SpAttack": 109,
+        "SpDefense": 85,
         "Speed": 100
       }
     },
@@ -146,8 +146,8 @@
         "HP": 44,
         "Attack": 48,
         "Defense": 65,
-        "Sp. Attack": 50,
-        "Sp. Defense": 64,
+        "SpAttack": 50,
+        "SpDefense": 64,
         "Speed": 43
       }
     },
@@ -161,8 +161,8 @@
         "HP": 59,
         "Attack": 63,
         "Defense": 80,
-        "Sp. Attack": 65,
-        "Sp. Defense": 80,
+        "SpAttack": 65,
+        "SpDefense": 80,
         "Speed": 58
       }
     },
@@ -176,8 +176,8 @@
         "HP": 79,
         "Attack": 83,
         "Defense": 100,
-        "Sp. Attack": 85,
-        "Sp. Defense": 105,
+        "SpAttack": 85,
+        "SpDefense": 105,
         "Speed": 78
       }
     },
@@ -191,8 +191,8 @@
         "HP": 45,
         "Attack": 30,
         "Defense": 35,
-        "Sp. Attack": 20,
-        "Sp. Defense": 20,
+        "SpAttack": 20,
+        "SpDefense": 20,
         "Speed": 45
       }
     },
@@ -206,8 +206,8 @@
         "HP": 50,
         "Attack": 20,
         "Defense": 55,
-        "Sp. Attack": 25,
-        "Sp. Defense": 25,
+        "SpAttack": 25,
+        "SpDefense": 25,
         "Speed": 30
       }
     },
@@ -222,8 +222,8 @@
         "HP": 60,
         "Attack": 45,
         "Defense": 50,
-        "Sp. Attack": 90,
-        "Sp. Defense": 80,
+        "SpAttack": 90,
+        "SpDefense": 80,
         "Speed": 70
       }
     },
@@ -238,8 +238,8 @@
         "HP": 40,
         "Attack": 35,
         "Defense": 30,
-        "Sp. Attack": 20,
-        "Sp. Defense": 20,
+        "SpAttack": 20,
+        "SpDefense": 20,
         "Speed": 50
       }
     },
@@ -254,8 +254,8 @@
         "HP": 45,
         "Attack": 25,
         "Defense": 50,
-        "Sp. Attack": 25,
-        "Sp. Defense": 25,
+        "SpAttack": 25,
+        "SpDefense": 25,
         "Speed": 35
       }
     },
@@ -270,13 +270,10 @@
         "HP": 65,
         "Attack": 90,
         "Defense": 40,
-        "Sp. Attack": 45,
-        "Sp. Defense": 80,
+        "SpAttack": 45,
+        "SpDefense": 80,
         "Speed": 75
       }
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

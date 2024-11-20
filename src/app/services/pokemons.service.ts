@@ -16,6 +16,21 @@ export class PokemonsService {
     return this.http.get<Pokemon[]>(this.urlbase);
   }
 
+  getPokemonById(id: String | null ): Observable <Pokemon>{
+    return this.http.get<Pokemon>(`${this.urlbase}/${id}` );
+  } 
+
+  postPokemon(pokemon: Pokemon): Observable<Pokemon>{
+    return this.http.post<Pokemon>(this.urlbase , pokemon);
+  }
+
+  putPokemon(pokemon: Pokemon , id: string | null): Observable <Pokemon>{
+    return this.http.put<Pokemon>(`${this.urlbase}/${id}`,pokemon);
+  }
+
+  deletePokemonById( id: string | null): Observable <void>{
+    return this.http.delete<void>(`${this.urlbase}/${id}`);
+  }
 
 
 }

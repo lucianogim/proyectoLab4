@@ -1,18 +1,34 @@
 
 <section>
-    <a><button  routerLink=""> Nuevo Pokemon</button></a>
+    <h2>Menu Principal Pokemons</h2>
+    <a><button  routerLink="/addPokemon"> Nuevo Pokemon</button></a>
     <table>
         <tbody>
         <tr>
             <th>ID</th>
-            <th>Usuario</th>
             <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Hp</th>
+            <th>Attack</th>
+            <th>Defense</th>
+            <th>SpAttack</th>
+            <th>SpDefence</th>
+            <th>Speed</th>
+            <th>Modificar</th>
+            <th>Eliminar</th>
         </tr>               
     @for (item of listaPokemons; track $index) {
         <tr>
           <td>{{item.id}}</td>
-          <td>{{item.base}}</td>
-          <td><a >Modificar</a></td>
+          <td>{{item.name}}</td>
+          <td>{{item.type}}</td>
+          <td>{{item.base.HP}}</td>
+          <td>{{item.base.Attack}}</td>
+          <td>{{item.base.Defense}}</td>
+          <td>{{item.base.SpAttack}}</td>
+          <td>{{item.base.SpDefense}}</td>
+          <td>{{item.base.Speed}}</td>
+          <td><a [routerLink]="['/updatePokemons',item.id]">Modificar</a></td>
           <td>  <button (click)="delete(item.id)">Eliminar </button> </td>
         </tr>
     }

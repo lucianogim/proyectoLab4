@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:proyectoLab4": "node dist/proyecto-lab4/server/server.mjs",
-    "backend": "json-server ./src/app/data/data.json -p 4000 --watch"
+    "backend": "json-server ./src/app/data/data.json -p 4000 --watch",
+    "backend2": "json-server ./src/app/data/moves.json -p 4001 --watch"
   },
   "private": true,
   "dependencies": {
