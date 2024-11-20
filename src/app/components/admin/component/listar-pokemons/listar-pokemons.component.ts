@@ -26,8 +26,7 @@ export class ListarPokemonsComponent implements OnInit{
     this.pokemonsService.getPokemons().subscribe(
       {
         next: (pokemons: Pokemon[])=>{
-          this.listaPokemons 
-
+          this.listaPokemons = pokemons
 
         }  
       }
