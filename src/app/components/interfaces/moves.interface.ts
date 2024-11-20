@@ -3,7 +3,7 @@ export interface Moves{
     name: string,
     type: string,
     category: string,
-    power: number | null,
-    accuracy: number | null
-    effects: any
+    power: number ,
+    accuracy: number ,
+    effect: number
 }

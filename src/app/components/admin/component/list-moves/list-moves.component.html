@@ -1,18 +1,21 @@
 
 <section>
-<a><button  routerLink="/addMoves"> Nuevo Pokemon</button></a>
-<table>
+    <h2>Menu Principal Movimientos</h2>
+<a><button  routerLink="/addMoves"> Nuevo Movimiento</button></a>
+<br>
+<br>
+<table id="content">
     <tbody>
     <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>Tipo</th>
-        <th>Precision</th>
-        <th>Categoria</th>
-        <th>Poder</th>
-        <th>Efecto</th>
-        <th>Modificar</th>
-        <th>Eliminar</th>
+        <th class="short">ID</th>
+        <th class="short">Nombre</th>
+        <th class="short">Tipo</th>
+        <th class="short">Precision</th>
+        <th class="short">Categoria</th>
+        <th class="short">Poder</th>
+        <th >Efecto</th>
+        <th class="short">Modificar</th>
+        <th class="short">Eliminar</th>
     </tr>               
 @for (item of listaMoves; track $index) {
     <tr>
@@ -22,8 +25,8 @@
       <td>{{item.accuracy}}</td>
       <td>{{item.category}}</td>
       <td>{{item.power}}</td>
-      <td>{{item.effects}}</td>
-      <td><a  >Modificar</a></td>
+      <td>{{item.effect}}</td>
+      <td><a [routerLink]="['/updateMoves',item.id]" > Modificar </a></td>
       <td>  <button (click)="delete(item.id)">Eliminar </button> </td>
     </tr>
 }

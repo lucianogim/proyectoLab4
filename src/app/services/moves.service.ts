@@ -16,12 +16,12 @@ export class MovesService {
     return this.http.get<Moves[]>(this.urlbase);
   }
 
-  getMoveById(id:string|null):Observable<Moves>{
+  getMoveById(id:string | null):Observable<Moves>{
     return this.http.get<Moves>(`${this.urlbase}/${id}`);
   }
 
-  postMove(move : Moves ) :Observable <Moves>{
-    return this.http.post<Moves>(this.urlbase, move);
+  postMove(move : Moves ) : Observable <Moves>{
+    return this.http.post<Moves>(this.urlbase , move);
   }
 
   putMove(move: Moves , id : string | null):Observable <Moves>{

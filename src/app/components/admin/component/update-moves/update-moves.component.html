@@ -1,1 +1,67 @@
-<p>update-moves works!</p>
+<h2>Update de Movimientos</h2>
+
+<form [formGroup]="formulario_update"  (ngSubmit)="update()">
+  <div class="form-group">
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" 
+    formControlName="id" readonly>
+  </div>
+  
+  <div class="form-group">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" 
+    formControlName="name">
+  </div>
+  
+  <div class="form-group">
+    <label for="type">Tipo:</label>
+    <select id="type" name="type" formControlName="type">
+      <option value="fire">Fuego</option>
+      <option value="fater">Agua</option>
+      <option value="grass">Planta</option>
+      <option value="electric">Eléctrico</option>
+      <option value="psychic">Psíquico</option>
+      <option value="ice">Hielo</option>
+      <option value="Bug">Bicho</option>
+      <option value="normal">Normal</option>
+      <option value="fighting">Lucha</option>
+      <option value="flying">Volador</option>
+      <option value="poison">Veneno</option>
+      <option value="ground">Tierra</option>
+      <option value="ghost">Fantasma</option>
+      <option value="dragon">Dragon</option>
+      <!-- Añadir más tipos si es necesario -->
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="category" >Categoria:</label>
+    <select type="text" id="category" name="category" formControlName="category">
+        <option value="physical">Fisico</option>
+        <option value="special">Especial</option>
+        <option value="status">Estado</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <label for="power">Power:</label>
+    <input type="number" id="power" name="power" formControlName="power">
+  </div>
+  
+  <div class="form-group">
+    <label for="accuracy">Precision:</label>
+    <input type="number" id="accuracy" name="accuracy" formControlName="accuracy">
+  </div>
+  
+  <div class="form-group">
+    <label for="pp">Puntos</label>
+    <input type="number" id="pp" name="pp" formControlName="pp">
+  </div>
+  
+  <div class="form-group">
+    <label for="effect">Efecto:</label>
+    <input type="number" id="effect" name="effect" formControlName="effect">
+  </div>
+  <br>
+  <button type="submit">Guardar Movimiento</button>
+</form>
