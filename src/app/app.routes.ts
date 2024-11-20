@@ -9,6 +9,7 @@ import { PagesAdminUpdateUsuarioComponent } from './components/admin/pages/pages
 import { authGuardFn } from './components/auth/guard/auth.guard-fn';
 import { authGuardFnAdmin } from './components/auth/guard/auth.guard-fn-admin';
 import { authGuardFnLogout } from './components/auth/guard/auth.guard-fn-logout';
+import { PageListarPokemonsComponent } from './components/admin/pages/page-listar-pokemons/page-listar-pokemons.component';
 
 export const routes: Routes = [
     {
@@ -34,6 +35,10 @@ export const routes: Routes = [
         path: 'updateUsuario/:id',
         component: PagesAdminUpdateUsuarioComponent,
         canActivate: [authGuardFnAdmin]
+    },
+    {   
+        path: 'listPokemons',
+        component: PageListarPokemonsComponent
     },
     {
         path: '**',

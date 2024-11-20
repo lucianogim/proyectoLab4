@@ -1,0 +1,282 @@
+{
+  "usuarios": [
+    {
+      "usuario": "admin",
+      "password": "admin",
+      "id": "e2bb"
+    },
+    {
+      "usuario": "usuario1",
+      "password": "12345",
+      "id": "1a11"
+    },
+    {
+      "usuario": "usuario2",
+      "password": "12345",
+      "id": "1ff1"
+    },
+    {
+      "id": "8eed",
+      "usuario": "usuario3",
+      "password": "12345"
+    },
+    {
+      "id": "66dd",
+      "usuario": "usuario5",
+      "password": "12345"
+    },
+    {
+      "id": "a83e",
+      "usuario": "usuario10",
+      "password": "123526"
+    },
+    {
+      "id": "6151",
+      "usuario": "usuario12",
+      "password": "12312413"
+    },
+    {
+      "id": "acdd",
+      "usuario": "juan2",
+      "password": "123132"
+    }
+  ],
+  "pokemons": [
+    {
+      "id": "1",
+      "name": "Bulbasaur",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "base": {
+        "HP": 45,
+        "Attack": 49,
+        "Defense": 49,
+        "Sp. Attack": 65,
+        "Sp. Defense": 65,
+        "Speed": 45
+      }
+    },
+    {
+      "id": "2",
+      "name": "Ivysaur",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "base": {
+        "HP": 60,
+        "Attack": 62,
+        "Defense": 63,
+        "Sp. Attack": 80,
+        "Sp. Defense": 80,
+        "Speed": 60
+      }
+    },
+    {
+      "id": "3",
+      "name": "Venusaur",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "base": {
+        "HP": 80,
+        "Attack": 82,
+        "Defense": 83,
+        "Sp. Attack": 100,
+        "Sp. Defense": 100,
+        "Speed": 80
+      }
+    },
+    {
+      "id": "4",
+      "name": "Charmander",
+      "type": [
+        "Fire"
+      ],
+      "base": {
+        "HP": 39,
+        "Attack": 52,
+        "Defense": 43,
+        "Sp. Attack": 60,
+        "Sp. Defense": 50,
+        "Speed": 65
+      }
+    },
+    {
+      "id": "5",
+      "name": "Charmeleon",
+      "type": [
+        "Fire"
+      ],
+      "base": {
+        "HP": 58,
+        "Attack": 64,
+        "Defense": 58,
+        "Sp. Attack": 80,
+        "Sp. Defense": 65,
+        "Speed": 80
+      }
+    },
+    {
+      "id": "6",
+      "name": "Charizard",
+      "type": [
+        "Fire",
+        "Flying"
+      ],
+      "base": {
+        "HP": 78,
+        "Attack": 84,
+        "Defense": 78,
+        "Sp. Attack": 109,
+        "Sp. Defense": 85,
+        "Speed": 100
+      }
+    },
+    {
+      "id": "7",
+      "name": "Squirtle",
+      "type": [
+        "Water"
+      ],
+      "base": {
+        "HP": 44,
+        "Attack": 48,
+        "Defense": 65,
+        "Sp. Attack": 50,
+        "Sp. Defense": 64,
+        "Speed": 43
+      }
+    },
+    {
+      "id": "8",
+      "name": "Wartortle",
+      "type": [
+        "Water"
+      ],
+      "base": {
+        "HP": 59,
+        "Attack": 63,
+        "Defense": 80,
+        "Sp. Attack": 65,
+        "Sp. Defense": 80,
+        "Speed": 58
+      }
+    },
+    {
+      "id": "9",
+      "name": "Blastoise",
+      "type": [
+        "Water"
+      ],
+      "base": {
+        "HP": 79,
+        "Attack": 83,
+        "Defense": 100,
+        "Sp. Attack": 85,
+        "Sp. Defense": 105,
+        "Speed": 78
+      }
+    },
+    {
+      "id": "10",
+      "name": "Caterpie",
+      "type": [
+        "Bug"
+      ],
+      "base": {
+        "HP": 45,
+        "Attack": 30,
+        "Defense": 35,
+        "Sp. Attack": 20,
+        "Sp. Defense": 20,
+        "Speed": 45
+      }
+    },
+    {
+      "id": "11",
+      "name": "Metapod",
+      "type": [
+        "Bug"
+      ],
+      "base": {
+        "HP": 50,
+        "Attack": 20,
+        "Defense": 55,
+        "Sp. Attack": 25,
+        "Sp. Defense": 25,
+        "Speed": 30
+      }
+    },
+    {
+      "id": "12",
+      "name": "Butterfree",
+      "type": [
+        "Bug",
+        "Flying"
+      ],
+      "base": {
+        "HP": 60,
+        "Attack": 45,
+        "Defense": 50,
+        "Sp. Attack": 90,
+        "Sp. Defense": 80,
+        "Speed": 70
+      }
+    },
+    {
+      "id": "13",
+      "name": "Weedle",
+      "type": [
+        "Bug",
+        "Poison"
+      ],
+      "base": {
+        "HP": 40,
+        "Attack": 35,
+        "Defense": 30,
+        "Sp. Attack": 20,
+        "Sp. Defense": 20,
+        "Speed": 50
+      }
+    },
+    {
+      "id": "14",
+      "name": "Kakuna",
+      "type": [
+        "Bug",
+        "Poison"
+      ],
+      "base": {
+        "HP": 45,
+        "Attack": 25,
+        "Defense": 50,
+        "Sp. Attack": 25,
+        "Sp. Defense": 25,
+        "Speed": 35
+      }
+    },
+    {
+      "id": "15",
+      "name": "Beedrill",
+      "type": [
+        "Bug",
+        "Poison"
+      ],
+      "base": {
+        "HP": 65,
+        "Attack": 90,
+        "Defense": 40,
+        "Sp. Attack": 45,
+        "Sp. Defense": 80,
+        "Speed": 75
+      }
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

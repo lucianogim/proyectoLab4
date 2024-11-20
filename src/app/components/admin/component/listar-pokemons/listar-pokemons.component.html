@@ -1,0 +1,21 @@
+
+<section>
+    <a><button  routerLink=""> Nuevo Pokemon</button></a>
+    <table>
+        <tbody>
+        <tr>
+            <th>ID</th>
+            <th>Usuario</th>
+            <th>Nombre</th>
+        </tr>               
+    @for (item of listaPokemons; track $index) {
+        <tr>
+          <td>{{item.id}}</td>
+          <td>{{item.base}}</td>
+          <td><a >Modificar</a></td>
+          <td>  <button (click)="delete(item.id)">Eliminar </button> </td>
+        </tr>
+    }
+    </tbody>
+    </table>
+</section>

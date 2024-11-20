@@ -12,10 +12,10 @@ import { CommonModule } from '@angular/common';
 })
 export class NavComponent implements OnInit{
   ngOnInit(): void {
-    if(localStorage.getItem("tokenAdmin")){
-
-    }
-  } 
+    // if(localStorage.getItem("tokenAdmin")){
+    //   this.authservice.logIn()
+    // }
+  }
   authservice = inject(AuthService) 
   router = inject(Router)
 

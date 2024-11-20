@@ -14,6 +14,7 @@ export class ListarUsuariosComponent implements OnInit{
 
   ngOnInit(): void {
     this.listarUsuarios();
+    
   }
 
   listaUsuarios : Usuarios[] = []
