@@ -14,6 +14,7 @@ import { PageAddPokemonComponent } from './components/admin/pages/page-add-pokem
 import { PageListMovesComponent } from './components/admin/pages/page-list-moves/page-list-moves.component';
 import { PageUpdateMovesComponent } from './components/admin/pages/page-update-moves/page-update-moves.component';
 import { PageAddMovesComponent } from './components/admin/pages/page-add-moves/page-add-moves.component';
+import { PageProfileComponent } from './components/user/pages/page-profile/page-profile.component';
 
 export const routes: Routes = [
     {
@@ -63,6 +64,10 @@ export const routes: Routes = [
     {
         path:   'addMoves',
         component: PageAddMovesComponent
+    },
+    {
+        path: 'userProfile',
+        component: PageProfileComponent
     },
     {
         path: '**',
